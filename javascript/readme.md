@@ -69,3 +69,10 @@ now.getDay();
 
 
 ##Regular Expressions
+
+##objects
+
+//basic treatment
+let myObject ={}
+myOjbect["firstName"] = "Joel";
+myOjbect.fistname > Joel

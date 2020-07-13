@@ -45,3 +45,37 @@ function(x){
 	return x + 1;
 }
 ```
+
+
+
+
+
+#### Python Dictionaries
+
+in Pandas, a series and a dictionary are similar.  A dictionary would include indexes for you as so:
+
+```python
+>>>mydict = {'red':2000, 'blue':1000, 'yellow': 500}
+```
+
+Dictionaries use the {} instead of ().
+
+Dictionaries are good for key/value pairs.
+
+you can say myseries = pd.Series(mydict) to create series out of dicts.
+
+```python
+import pandas as pd
+
+countries = ['United States', 'Germany', 'Japan', 'India', 'Russia', 'Canada', 'Egypt']
+needslicense =  [True, True, True, False, True, True, True]
+carsperthousand = [809, 731, 588, 18, 200, 70, 45]
+my_cars_dict = {'country': countries,
+           'needs_license': needslicense,
+           'cars_per_thou': carsperthousand }
+ 
+# Build a DataFrame cars from my_cars_dict
+carinfo = pd.DataFrame(my_cars_dict)
+print(cars)
+```
+
